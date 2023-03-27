@@ -1,0 +1,27 @@
+Release 9.2.04i - xst J.40
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.15 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/as4v/Behavioral is now defined in a different file.  It was defined in "D:/SOC/addsub4v/as4v.vhd", and is now defined in "D:/SOC/addsub4v/a2.vhd".
+WARNING:HDLParsers:3607 - Unit work/as4v is now defined in a different file.  It was defined in "D:/SOC/addsub4v/a2.vhd", and is now defined in "D:/SOC/addsub4v/as4v.vhd".
+WARNING:HDLParsers:3607 - Unit work/as4v/Behavioral is now defined in a different file.  It was defined in "D:/SOC/addsub4v/a2.vhd", and is now defined in "D:/SOC/addsub4v/as4v.vhd".
+Compiling vhdl file "D:/SOC/addsub4v/a2.vhd" in Library work.
+Entity <as4v> compiled.
+Entity <as4v> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/SOC/addsub4v/as4v.vhd" in Library work.
+Architecture behavioral of Entity as4v is up to date.
+CPU : 0.11 / 0.27 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 180660 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
