@@ -1,0 +1,1 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/sum4.sch" sum4.vhf

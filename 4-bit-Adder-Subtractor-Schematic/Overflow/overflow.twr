@@ -1,0 +1,91 @@
+--------------------------------------------------------------------------------
+Release 9.2.04i Trace 
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx92i\bin\nt\trce.exe -ise D:/SOC/Overflow/Overflow.ise -intstyle ise -e
+3 -s 4 -xml overflow overflow.ncd -o overflow.twr overflow.pcf
+
+Design file:              overflow.ncd
+Physical constraint file: overflow.pcf
+Device,package,speed:     xc3s400,ft256,-4 (PRODUCTION 1.39 2007-10-19)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A0_S1          |Co             |   11.584|
+A0_S1          |Ov             |   10.355|
+A0_S1          |R<1>           |    8.502|
+A0_S1          |R<2>           |   10.043|
+A0_S1          |R<3>           |   10.464|
+A<0>           |Co             |   12.389|
+A<0>           |Ov             |   11.160|
+A<0>           |R<0>           |    7.604|
+A<0>           |R<1>           |    9.307|
+A<0>           |R<2>           |   10.848|
+A<0>           |R<3>           |   11.269|
+A<1>           |Co             |   11.245|
+A<1>           |Ov             |   10.016|
+A<1>           |R<1>           |    8.157|
+A<1>           |R<2>           |    9.704|
+A<1>           |R<3>           |   10.125|
+A<2>           |Co             |    9.623|
+A<2>           |Ov             |    8.394|
+A<2>           |R<2>           |    7.601|
+A<2>           |R<3>           |    8.503|
+A<3>           |Co             |    9.000|
+A<3>           |Ov             |    7.612|
+A<3>           |R<3>           |    7.651|
+B<0>           |Co             |   12.653|
+B<0>           |Ov             |   11.424|
+B<0>           |R<0>           |    7.488|
+B<0>           |R<1>           |    9.571|
+B<0>           |R<2>           |   11.112|
+B<0>           |R<3>           |   11.533|
+B<1>           |Co             |   10.694|
+B<1>           |Ov             |    9.465|
+B<1>           |R<1>           |    7.682|
+B<1>           |R<2>           |    9.153|
+B<1>           |R<3>           |    9.574|
+B<2>           |Co             |    9.810|
+B<2>           |Ov             |    8.581|
+B<2>           |R<2>           |    7.757|
+B<2>           |R<3>           |    8.690|
+B<3>           |Co             |    8.494|
+B<3>           |Ov             |    8.172|
+B<3>           |R<3>           |    8.205|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Mar 08 21:06:41 2023 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 129 MB
+
+
+

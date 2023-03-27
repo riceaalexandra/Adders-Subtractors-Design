@@ -1,0 +1,47 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+map -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o overflow_map.ncd overflow.ngd overflow.pcf
+par -ise "D:/SOC/Overflow/Overflow.ise" -w -intstyle ise -ol std -t 1 overflow_map.ncd overflow.ncd overflow.pcf
+trce -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -e 3 -s 4 -xml overflow overflow.ncd -o overflow.twr overflow.pcf
+netgen -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -s 4 -pcf overflow.pcf -rpw 100 -tpw 0 -ar Structure -tm overflow -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim overflow.ncd overflow_timesim.vhd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+map -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o overflow_map.ncd overflow.ngd overflow.pcf
+par -ise "D:/SOC/Overflow/Overflow.ise" -w -intstyle ise -ol std -t 1 overflow_map.ncd overflow.ncd overflow.pcf
+trce -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -e 3 -s 4 -xml overflow overflow.ncd -o overflow.twr overflow.pcf
+netgen -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -s 4 -pcf overflow.pcf -rpw 100 -tpw 0 -ar Structure -tm overflow -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim overflow.ncd overflow_timesim.vhd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+map -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o overflow_map.ncd overflow.ngd overflow.pcf
+par -ise "D:/SOC/Overflow/Overflow.ise" -w -intstyle ise -ol std -t 1 overflow_map.ncd overflow.ncd overflow.pcf
+trce -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -e 3 -s 4 -xml overflow overflow.ncd -o overflow.twr overflow.pcf
+netgen -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -s 4 -pcf overflow.pcf -rpw 100 -tpw 0 -ar Structure -tm overflow -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim overflow.ncd overflow_timesim.vhd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+map -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o overflow_map.ncd overflow.ngd overflow.pcf
+par -ise "D:/SOC/Overflow/Overflow.ise" -w -intstyle ise -ol std -t 1 overflow_map.ncd overflow.ncd overflow.pcf
+trce -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -e 3 -s 4 -xml overflow overflow.ncd -o overflow.twr overflow.pcf
+netgen -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -s 4 -pcf overflow.pcf -rpw 100 -tpw 0 -ar Structure -tm overflow -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim overflow.ncd overflow_timesim.vhd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
+xst -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -ifn overflow.xst -ofn overflow.syr
+ngdbuild -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "overflow.ngc" overflow.ngd
+map -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o overflow_map.ncd overflow.ngd overflow.pcf
+par -ise "D:/SOC/Overflow/Overflow.ise" -w -intstyle ise -ol std -t 1 overflow_map.ncd overflow.ncd overflow.pcf
+trce -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -e 3 -s 4 -xml overflow overflow.ncd -o overflow.twr overflow.pcf
+netgen -ise "D:/SOC/Overflow/Overflow.ise" -intstyle ise -s 4 -pcf overflow.pcf -rpw 100 -tpw 0 -ar Structure -tm overflow -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim overflow.ncd overflow_timesim.vhd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/Overflow/overflow.sch" overflow.vhf
