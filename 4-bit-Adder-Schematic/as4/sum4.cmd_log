@@ -1,0 +1,7 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/SOC/as4/sum4.sch" sum4.vhf
+xst -ise "D:/SOC/as4/as4.ise" -intstyle ise -ifn sum4.xst -ofn sum4.syr
+ngdbuild -ise "D:/SOC/as4/as4.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-ft256-4 "sum4.ngc" sum4.ngd
+map -ise "D:/SOC/as4/as4.ise" -intstyle ise -p xc3s400-ft256-4 -cm area -pr b -k 4 -c 100 -o sum4_map.ncd sum4.ngd sum4.pcf
+par -ise "D:/SOC/as4/as4.ise" -w -intstyle ise -ol std -t 1 sum4_map.ncd sum4.ncd sum4.pcf
+trce -ise "D:/SOC/as4/as4.ise" -intstyle ise -e 3 -s 4 -xml sum4 sum4.ncd -o sum4.twr sum4.pcf
+netgen -ise "D:/SOC/as4/as4.ise" -intstyle ise -s 4 -pcf sum4.pcf -rpw 100 -tpw 0 -ar Structure -tm sum4 -insert_pp_buffers false -w -dir netgen/par -ofmt vhdl -sim sum4.ncd sum4_timesim.vhd
